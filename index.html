@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="container__title home">
+                <h3>HOME</h3>
+                <div class="score mayor" id="home-score">0</div>
+                <div class="sum__container">
+                    <div class="sum" id="home-sum1" onclick="homeSum1()">+1</div>
+                    <div class="sum" id="home-sum2" onclick="homeSum2()">+2</div>
+                    <div class="sum" id="home-sum3" onclick="homeSum3()">+3</div>
+                </div>
+            </div>
+            <div class="container__title guest">
+                <h3>GUEST</h3>
+                <div class="score mayor" id="guest-score">0</div>
+                <div class="sum__container">
+                    <div class="sum" id="guest-sum1" onclick="guestSum1()">+1</div>
+                    <div class="sum" id="guest-sum2" onclick="guestSum2()">+2</div>
+                    <div class="sum" id="guest-sum3" onclick="guestSum3()">+3</div>
+                </div>
+            </div>
+        </div>
+        <button onclick="reset()" id="reset-btn">Reset</button>
+        <script src="index.js"></script>
+    </body>
+</html>
